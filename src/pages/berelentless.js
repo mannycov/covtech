@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectOne = () => {
+const BeRelentless = () => {
   return (
     <div>
       <h1>BeRelentless</h1>
@@ -9,4 +9,4 @@ const ProjectOne = () => {
   )
 }
 
-export default ProjectOne
+export default BeRelentless
