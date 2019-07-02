@@ -5,5 +5,12 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-sass`]
+  siteMetadata: {
+    title: 'COVTECH',
+    author: 'Emanuel Covarrubias'
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sass`
+  ]
 }

@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Head title="Home" />
       <h2>Emanuel Covarrubias from Silicon Valley</h2>
-      <p>Visit my GitHub page at 
+      <p>Visit my GitHub page at{' '}
         <a href="https://github.com/mannycov" target="_blank" rel="noopener noreferrer">
           github.com/mannycov
         </a>
