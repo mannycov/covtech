@@ -1,4 +1,5 @@
 import React from 'react'
+
 import aboutStyles from '../styles/about.module.scss'
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
       <div className={aboutStyles.container}>
         <h2 className={aboutStyles.sectionTitle}>About Me</h2>
         <div className={aboutStyles.bottomLine}></div>
-        <p className={aboutStyles.lead}>A little about myself...</p>
+        <p className={aboutStyles.lead}>A little about myself</p>
         <div className={aboutStyles.aboutInfo}>
           <img src="https://source.unsplash.com/random/200x200?v=3"  alt="bio" className={aboutStyles.bioImage} />
           <div className={`${aboutStyles.bio} ${aboutStyles.bgLight}`}>

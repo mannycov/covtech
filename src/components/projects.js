@@ -6,7 +6,7 @@ import projectStyles from '../styles/projects.module.scss'
 
 const Projects = () => {
   return (
-    <section id={projectStyles.projects} className={`${projectStyles.textCenter} ${projectStyles.py3}`}>
+    <section id={projectStyles.projects} className={`${projectStyles.bgLight} ${projectStyles.textCenter} ${projectStyles.py3}`}>
       <div className={projectStyles.container}>
         <h2 className={projectStyles.sectionTitle}>Projects</h2>
         <div className={projectStyles.bottomLine}></div>

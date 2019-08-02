@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelopeOpen } from 'react-icons/fa'
+import { FaEnvelopeOpen, FaSearchLocation } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
 
 import contactStyles from '../styles/contact.module.scss'
@@ -7,7 +7,7 @@ import contactStyles from '../styles/contact.module.scss'
 const Contact = () => {
   return  (
     <div>
-      <section id={contactStyles.contactA} className={`${contactStyles.textCenter} ${contactStyles.py3}`}>
+      <section id={contactStyles.contactA} className={`${contactStyles.bgLight} ${contactStyles.textCenter} ${contactStyles.py3}`}>
         <div className={contactStyles.container}>
           <h2 className={contactStyles.sectionTitle}>Contact Me</h2>
           <div className={contactStyles.bottomLine}></div>
@@ -36,7 +36,7 @@ const Contact = () => {
               <p>cov.emanuel@gmail.com</p>
             </div>
             <div>
-              <MdLocationOn />
+              <FaSearchLocation />
               <h3>Location</h3>
               <p>San Jose, CA</p>
             </div>

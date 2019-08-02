@@ -22,7 +22,7 @@ const Technologies = () => {
         <h2 className={technologiesStyles.sectionTitle}>Technologies</h2>
         <div className={technologiesStyles.bottomLine}></div>
         <p className={technologiesStyles.lead}>
-          Some of the technologies I love using include..
+          Some of the technologies I love using include
         </p>
         <div className={technologiesStyles.techStack}>
           <div>
