@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import Head from '../components/head'
-import Covtech from '../components/covtech'
+import Header from '../components/header'
 import About from '../components/about'
 import Projects from '../components/projects'
 import Technologies from '../components/technologies'
@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head title="Home" />
-      <Covtech />
+      <Header />
       <About />
       <Projects />
       <Technologies />

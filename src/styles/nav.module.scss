@@ -1,0 +1,81 @@
+@import 'config';
+@import 'utilities';
+
+#main-nav {
+  background: $dark-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+  border-bottom: 3px solid $main-color;
+
+  // Smartphones
+  @media (max-width: 500px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    li {
+      padding: 1rem;
+    }
+  }
+
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 1rem;
+    color: $logo-color;
+    font-size: 2rem;
+    // text-transform: uppercase;
+  }
+
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5srem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    -webkit-transition: border-color 0.5s;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+.nav-link {
+  color: #999999;
+  font-size: .9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #666666;
+}
+
+.active-nav-link {
+  color: #333333;
+}

@@ -1,0 +1,30 @@
+@import 'config';
+@import 'utilities';
+
+#about {
+  .about-info {
+    display: grid;
+    grid-template-areas: 
+    'bioimage bio bio';
+    grid-gap: 1.2rem;
+
+    // Smartphones
+    @media (max-width: 500px) {
+      grid-template-areas:
+      'bioimage'
+      'bio';
+    }
+  }
+
+  // Grid Areas
+  .bio-image {
+    height: auto;
+    grid-area: bioimage;
+  }
+
+  .bio {
+    grid-area: bio;
+    border-left: 3px solid $main-color;
+    padding: 0.8rem;
+  }
+}

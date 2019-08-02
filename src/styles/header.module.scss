@@ -1,32 +1,58 @@
-.header {
-  padding: 1rem 0 3rem;
+@import 'config';
+@import 'utilities';
+
+#header {
+  // Header Home
+  &-home {
+    background: $bg-image no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+
+    // Tablets & smaller
+    @media (max-width: 800px) {
+      height: 30rem;
+    }
+
+    // Smartphones
+    @media (max-width: 500px) {
+      height: 15rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+    }
+
+    // Header Content
+    .header-content {
+      text-align: center;
+      padding-top: 25%;
+
+      // Tablets & smaller
+      @media (max-width: 800px) {
+        padding-top: 5rem;
+      }
+
+      // Smartphones
+      @media (max-width: 500px) {
+        display: none;
+      }
+
+      // Landscape
+      @media (max-height: 580px) {
+        padding-top: 3rem;
+      }
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.6;
+
+        // Landscape
+        @media (max-height: 330px) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }
 
-.title {
-  color: #000000;
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-}
-
-.nav-link {
-  color: #999999;
-  font-size: .9rem;
-  margin-right: 1.3rem;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: #666666;
-}
-
-.active-nav-link {
-  color: #333333;
+.text-primary {
+  color: $main-color;
 }

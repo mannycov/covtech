@@ -8,7 +8,7 @@ const BeRelentless = () => {
     <Layout>
       <Head title="BeRelentless" />
       <h1>BeRelentless</h1>
-      <p>A social media fitness goals app to help you reach your fitness goals</p>
+      <p>A social networking fitness goals app designed to help you reach your fitness goals</p>
       <p>Visit the project at{' '}
         <a href="http://www.berelentless.io" target="_blank" rel="noopener noreferrer">berelentless.io</a>
       </p>

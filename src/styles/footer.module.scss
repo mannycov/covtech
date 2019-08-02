@@ -1,3 +1,54 @@
-.footer {
-  margin-top: 3rem;
+@import 'config';
+@import 'utilities';
+
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 10rem;
+
+  // Smartphones
+  @media (max-width: 500px) {
+    height: 7rem;
+  }
+
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 10rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    // Smartphones
+    @media (max-width: 500px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+
+    .social .icon {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        background: $logo-color;
+      }
+    }
+  }
 }
