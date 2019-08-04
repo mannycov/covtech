@@ -16,7 +16,7 @@
     // Smartphones
     @media (max-width: 500px) {
       height: 15rem;
-      border-bottom: 3px solid $main-color;
+      border-bottom: 3px solid $primary-color;
       background-position: 20% 30%;
     }
 
@@ -54,5 +54,5 @@
 }
 
 .text-primary {
-  color: $main-color;
+  color: $primary-color;
 }
