@@ -1,4 +1,4 @@
-.layout-container {
+.container {
   margin: 0;
   padding: 0;
 
@@ -14,7 +14,7 @@
   min-height: 100vh;
 }
 
-.layout-content {
+.content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;

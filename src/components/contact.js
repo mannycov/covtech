@@ -1,12 +1,11 @@
 import React from 'react'
-import { FaEnvelopeOpen, FaSearchLocation } from 'react-icons/fa'
-import { MdLocationOn } from 'react-icons/md'
+import { TiLocation, TiMail } from 'react-icons/ti'
 
 import contactStyles from '../styles/contact.module.scss'
 
 const Contact = () => {
   return  (
-    <div>
+    <div id="contact">
       <section id={contactStyles.contactA} className={`${contactStyles.bgLight} ${contactStyles.textCenter} ${contactStyles.py3}`}>
         <div className={contactStyles.container}>
           <h2 className={contactStyles.sectionTitle}>Contact Me</h2>
@@ -31,12 +30,12 @@ const Contact = () => {
         <div className={contactStyles.container}>
           <div className={contactStyles.contactInfo}>
             <div>
-              <FaEnvelopeOpen />
+              <TiMail size='2em' />
               <h3>Email</h3>
               <p>cov.emanuel@gmail.com</p>
             </div>
             <div>
-              <FaSearchLocation />
+              <TiLocation size='2em' />
               <h3>Location</h3>
               <p>San Jose, CA</p>
             </div>
