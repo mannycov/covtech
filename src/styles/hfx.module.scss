@@ -1,0 +1,60 @@
+@import 'config';
+@import 'utilities';
+
+#hfx {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.8rem;
+
+    // Tablets & smaller
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+
+    .project {
+      &-description {
+        padding: 4rem 2rem;
+
+        // Tablets & smaller
+        @media (max-width: 800px) {
+          padding: 2rem 2rem 0;
+        }
+      }
+      
+      &-image {
+        padding: 2rem;
+        justify-self: end;
+        max-height: 400px;
+        max-width: 600px;
+
+        // Tablets
+        @media (max-width: 800px) {
+          height: auto;
+          min-width: 250px;
+        }
+
+        // Smartphones
+        @media (max-width: 500px) {
+          display: none;
+        }
+      }
+  
+      &-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      &-technologies {
+        border-left: 3px solid $primary-color;
+        place-self: center stretch;
+        padding: 2rem;
+
+        ul {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,15 @@
 // Variables
 $website-width: 1280px;
-$primary-color: #79f0a7;
+// $primary-color: #79f0a7;
+$primary-color: #2a89d6;
 $secondary-color: #a5cff1;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url('../images/landing.jpg');
+
+//   --primaryAlt: #009688;
+//   --lightPrimaryAlt: #ccf2e2;
 
 // Set Text Color
 @function set-text-color($color) {

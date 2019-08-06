@@ -38,6 +38,7 @@ button[class*='btn-']:hover,
 a[class*='btn-']:hover,
 input[class*='btn-']:hover {
   background-color: $primary-color;
+  color: set-text-color($primary-color);
 }
 
 // Backgrounds

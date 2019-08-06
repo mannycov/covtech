@@ -1,38 +1,40 @@
 @import 'config';
 @import 'utilities';
 
-.tech-stack {
-  margin-top: 3rem;
-  display: grid;
-  grid-column-gap: 0.2rem;
-  grid-row-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  // Smartphones
-  @media(max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-
-  div {
+#technologies {
+  .tech-stack {
+    margin: 6rem 0;
     display: grid;
-    background-color: $secondary-color;
-    border: 1.5px solid $secondary-color;
-    border-radius: 5px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    // Smartphones
+    @media(max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+
+    div {
+      display: grid;
+      background-color: $secondary-color;
+      border: 1.5px solid $secondary-color;
+      border-radius: 5px;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    div:hover {
+      background-color: $light-color;
+      color: $secondary-color;
+    }
   }
 
-  div:hover {
-    background-color: $light-color;
+  .icon {
+    padding-top: 0.4rem;
+    font-size: 1.5rem;
+  }
+
+  .icon:hover {
     color: $secondary-color;
   }
-}
-
-.icon {
-  padding-top: 0.4rem;
-  font-size: 1.5rem;
-}
-
-.icon:hover {
-  color: $secondary-color;
 }

@@ -19,12 +19,15 @@
   // Grid Areas
   .bio-image {
     height: auto;
+    width: 100%;
     grid-area: bioimage;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
 
   .bio {
     grid-area: bio;
     border-left: 3px solid $primary-color;
-    padding: 0.8rem;
+    padding: 2rem 0.8rem;
   }
 }

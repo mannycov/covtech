@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import hfx from '../images/hfx.png'
+import berelentless from '../images/berelentless.png'
 import projectStyles from '../styles/projects.module.scss'
-// import img from '../images/landing.jpg'
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
           <div className={projectStyles.projectItems}>
             <div className={projectStyles.project}>
               <div className={projectStyles.projectImage}>
-                <img src="https://source.unsplash.com/random/200x200?v=1" alt="project"/>
+                <img src={berelentless} alt="BeRelentless"/>
               </div>
               <div className={projectStyles.projectText}>
                 <div className={projectStyles.projectTextWrap}>
@@ -28,7 +29,7 @@ const Projects = () => {
             </div>
             <div className={projectStyles.project}>
               <div className={projectStyles.projectImage}>
-                <img src="https://source.unsplash.com/random/200x200?v=2" alt="project"/>
+                <img src={hfx} alt="HFX"/>
               </div>
               <div className={projectStyles.projectText}>
                 <div className={projectStyles.projectTextWrap}>

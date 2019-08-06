@@ -3,6 +3,10 @@
 
 #main-nav {
   background: $dark-color;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,9 +35,16 @@
     display: -ms-flexbox;
     display: flex;
     margin-left: 1rem;
+    border: none;
     color: $medium-color;
     font-size: 2rem;
     text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   ul {
