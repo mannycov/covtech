@@ -4,12 +4,12 @@ import {
   FaReact,
   FaNode,
   FaHtml5,
-  FaCss3Alt
+  FaCss3Alt,
+  FaBootstrap
  } from 'react-icons/fa'
  import {
   DiMongodb,
   DiSass,
-  DiHeroku,
   DiGit
 } from 'react-icons/di'
 
@@ -51,7 +51,7 @@ const Technologies = () => {
               <h3>Sass <DiSass className={technologiesStyles.icon} color='#bf4080'/></h3>
             </div>
             <div>
-              <h3>Heroku <DiHeroku className={technologiesStyles.icon} color='#9576b9'/></h3>
+              <h3>Bootstrap <FaBootstrap className={technologiesStyles.icon} color='#563d7c'/></h3>
             </div>
           </div>
         </div>

@@ -13,9 +13,9 @@ const Footer = () => {
       <div className={`${footerStyles.footerContent} ${footerStyles.container}`}>
         <p>Copyright &copy; {new Date().getFullYear()} COVTECH</p>
         <div className={footerStyles.social}>
-          <FaInstagram className={footerStyles.icon} />
-          <FaLinkedin className={footerStyles.icon} />
-          <FaGithub className={footerStyles.icon} />
+          <a href="https://www.instagram.com/emanuel_cov/" target="_blank" rel="noopener noreferrer"><FaInstagram className={footerStyles.icon} /></a>
+          <a href="https://www.linkedin.com/in/emanuel-covarrubias/" target="_blank" rel="noopener noreferrer"><FaLinkedin className={footerStyles.icon} /></a>
+          <a href="https://github.com/mannycov" target="_blank" rel="noopener noreferrer"><FaGithub className={footerStyles.icon} /></a>
         </div>
       </div>
     </footer>
