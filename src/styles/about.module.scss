@@ -9,16 +9,17 @@
     grid-gap: 1.2rem;
 
     // Smartphones
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       grid-template-areas:
       'bioimage'
       'bio';
+
+      grid-row-gap: 10rem;
     }
   }
 
   // Grid Areas
   .bio-image {
-    height: auto;
     width: 100%;
     grid-area: bioimage;
     -webkit-transform: rotate(270deg);
