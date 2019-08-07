@@ -12,18 +12,18 @@ const Nav = ({ title }) => {
     const windowWidth = window.innerWidth;
     windowWidth <= 500 ? offSet = 110 : offSet = 80;
   }
-
-  handleOffSet();
-
+  
   function resize() {
     handleOffSet();
   }
+
+  handleOffSet();
 
   window.onresize = resize;
 
   return (
     <nav id={navStyles.mainNav}>
-      <h1><Link className={navStyles.title} to="/">covtech</Link></h1>
+      <h1><Link className={navStyles.title} to="/">Covtech</Link></h1>
       <ul style={{ display }} >
         <li><Link className={navStyles.navLink} activeClassName={navStyles.activeNavLink} to="/">Home</Link></li>
         <li><AnchorLink className={navStyles.navLink} offset={() => offSet} href="/#about">About</AnchorLink></li>
