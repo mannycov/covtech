@@ -9,7 +9,7 @@ const Nav = ({ title }) => {
   title === 'Home' ? display = 'flex' : display = 'none';
 
   function handleOffSet() {
-    if (window !== undefined) {
+    if (typeof window !== `undefined`) {
       const windowWidth = window.innerWidth;
       windowWidth <= 500 ? offSet = 110 : offSet = 80;
     }
@@ -21,7 +21,7 @@ const Nav = ({ title }) => {
 
   handleOffSet();
 
-  if (window !== undefined) window.onresize = resize;
+  if (typeof window !== `undefined`) window.onresize = resize;
   
   return (
     <nav id={navStyles.mainNav}>
