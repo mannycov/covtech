@@ -9,8 +9,10 @@ const Nav = ({ title }) => {
   title === 'Home' ? display = 'flex' : display = 'none';
 
   function handleOffSet() {
-    const windowWidth = window.innerWidth;
-    windowWidth <= 500 ? offSet = 110 : offSet = 80;
+    if (window !== undefined) {
+      const windowWidth = window.innerWidth;
+      windowWidth <= 500 ? offSet = 110 : offSet = 80;
+    }
   }
   
   function resize() {
@@ -19,8 +21,8 @@ const Nav = ({ title }) => {
 
   handleOffSet();
 
-  window.onresize = resize;
-
+  if (window !== undefined) window.onresize = resize;
+  
   return (
     <nav id={navStyles.mainNav}>
       <h1><Link className={navStyles.logo} to="/">Covtech</Link></h1>
