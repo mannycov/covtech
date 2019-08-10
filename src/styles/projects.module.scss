@@ -108,6 +108,9 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    a {
+      color: $dark-color;
+    }
   }
 
   &-text-title {
