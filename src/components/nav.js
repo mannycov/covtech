@@ -11,7 +11,7 @@ const Nav = ({ title }) => {
   function handleOffSet() {
     if (typeof window !== `undefined`) {
       const windowWidth = window.innerWidth;
-      windowWidth <= 500 ? offSet = 110 : offSet = 80;
+      windowWidth <= 500 ? offSet = 110 : offSet = 70;
     }
   }
   
