@@ -27,7 +27,7 @@ const Nav = ({ title }) => {
     <nav id={navStyles.mainNav}>
       <h1><Link className={navStyles.logo} to="/">Covtech</Link></h1>
       <ul style={{ display }} >
-        <li><Link to="/">Home</Link></li>
+        <li><AnchorLink offset={() => offSet} href="#header">Home</AnchorLink></li>
         <li><AnchorLink offset={() => offSet} href="/#about">About</AnchorLink></li>
         <li><AnchorLink offset={() => offSet} href="#projects">Projects</AnchorLink></li>
         <li><AnchorLink offset={() => offSet} href="#technologies">Technologies</AnchorLink></li>
