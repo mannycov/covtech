@@ -5,8 +5,19 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import navStyles from '../styles/nav.module.scss'
 
 const Nav = ({ title }) => {
-  let display, offSet;
-  title === 'Home' ? display = 'flex' : display = 'none';
+  let logoLink, display, offSet
+
+  if (title === 'Home') {
+    logoLink = (
+      <AnchorLink className={navStyles.logo} offset={() => offSet} href="#header">Covtech</AnchorLink>
+    )
+    display = 'flex'
+  } else {
+    logoLink = (
+      <Link className={navStyles.logo} to="/">Covtech</Link>
+    )
+    display= 'none'
+  }
 
   function handleOffSet() {
     if (typeof window !== `undefined`) {
@@ -16,16 +27,16 @@ const Nav = ({ title }) => {
   }
   
   function resize() {
-    handleOffSet();
+    handleOffSet()
   }
 
-  handleOffSet();
+  handleOffSet()
 
-  if (typeof window !== `undefined`) window.onresize = resize;
+  if (typeof window !== `undefined`) window.onresize = resize
   
   return (
     <nav id={navStyles.mainNav}>
-      <h1><Link className={navStyles.logo} to="/">Covtech</Link></h1>
+      <h1>{logoLink}</h1>
       <ul style={{ display }} >
         <li><AnchorLink offset={() => offSet} href="#header">Home</AnchorLink></li>
         <li><AnchorLink offset={() => offSet} href="/#about">About</AnchorLink></li>
