@@ -13,7 +13,11 @@ const About = () => {
           <div className={aboutStyles.aboutInfo}>
             <img src={bioImage} alt="bio" className={aboutStyles.bioImage} />
             <div className={`${aboutStyles.bio} ${aboutStyles.bgLight}`}>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo eius optio! Beatae rerum, eius minus quisquam quaerat animi perspiciatis?</p>
+              <p>I am a full stack software engineer with a focus on Javascript. I love to code because I find the process of problem solving very satisfying and I enjoy watching an idea for a project take shape and materialize.
+              </p>
+              <br/>
+              <p> I build full stack applications on my own as well as in groups of engineers using the latest technology stacks. I love seeing new technologies in the community arise and I’m always excited to learn about them. I also am a lover of learning in general, a problem solver, and a fitness enthusiast. Please get in touch if you'd like to know more.
+              </p>
             </div>
           </div>
         </div>

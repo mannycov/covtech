@@ -16,7 +16,7 @@ const HFX = () => {
           <div className={hfxStyles.bottomLine}></div>
           <div className={hfxStyles.container}>
             <div className={hfxStyles.projectDescription}>
-              <p className={hfxStyles.lead}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dignissimos mollitia aut animi rem atque fugit dolor eos consequuntur perspiciatis, neque, quod reprehenderit, nobis sunt! Voluptas beatae iure dolores consequatur.</p>
+              <p className={hfxStyles.lead}>A hair salon website created for a local businees - Hair Effects by Ricardo provides the latest style trends, excellent care for your hair, and great customer service!</p>
             </div>
             <div className={hfxStyles.project}>
               <div className={hfxStyles.projectImage}>
