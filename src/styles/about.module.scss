@@ -18,21 +18,8 @@
 
   // Grid Areas
   .bio-image {
-    width: 100%;
     grid-area: bioimage;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-
-    // Tablets & smaller
-    @media (max-width: 800px) {
-      place-self: center;
-      padding: 10rem;
-    }
-
-    // Smartphones
-    @media (max-width: 500px) {
-      padding: 5rem;
-    }
+    place-self: center;
   }
 
   .bio {

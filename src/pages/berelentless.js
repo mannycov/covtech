@@ -1,12 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import Layout from '../components/layout'
-import Head from '../components/head'
-import laptop from '../images/laptop.jpg'
-import beRelentless from '../images/berelentless.png'
-import beRelentlessStyles from '../styles/berelentless.module.scss'
+import Layout from '../components/layout';
+import Head from '../components/head';
+import beRelentlessStyles from '../styles/berelentless.module.scss';
 
 const BeRelentless = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    beRelentless: file (relativePath: { eq: "berelentless.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 580, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    laptop: file (relativePath: { eq: "laptop.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 150, maxHeight: 150) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <Head title="BeRelentless" />
@@ -20,7 +38,7 @@ const BeRelentless = () => {
             </div>
             <div className={beRelentlessStyles.project}>
               <div className={beRelentlessStyles.projectImage}>
-                <img src={beRelentless} alt="BeRelentless"/>
+                <Img fluid={data.beRelentless.childImageSharp.fluid} />
               </div>
               <div className={beRelentlessStyles.projectLink}>
                 <a className={beRelentlessStyles.btnLight} href="http://www.berelentless.io" target="_blank" rel="noopener noreferrer">Visit</a>
@@ -33,7 +51,7 @@ const BeRelentless = () => {
           <div className={beRelentlessStyles.bottomLine}></div>
           <div className={beRelentlessStyles.container}>
             <div className={beRelentlessStyles.projectImage}>
-              <img src={laptop} alt="laptop"/>
+              <Img fluid={data.laptop.childImageSharp.fluid} />
             </div>
             <div className={`${beRelentlessStyles.projectTechnologies} ${beRelentlessStyles.bgLight}`}>
               <ul>

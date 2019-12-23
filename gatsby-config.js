@@ -1,11 +1,22 @@
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     title: 'COVTECH',
     author: 'Emanuel Covarrubias'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -8,7 +8,7 @@
     grid-column-gap: 0.8rem;
 
     // Tablets & smaller
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       grid-template-columns: 1fr;
       grid-row-gap: 2rem;
     }
@@ -26,18 +26,10 @@
       &-image {
         padding: 2rem;
         justify-self: end;
-        max-height: 400px;
-        max-width: 600px;
 
         // Tablets
         @media (max-width: 800px) {
           height: auto;
-          min-width: 250px;
-        }
-
-        // Smartphones
-        @media (max-width: 500px) {
-          display: none;
         }
       }
 
