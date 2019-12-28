@@ -18,7 +18,7 @@ const BeRelentless = () => {
     }
     laptop: file (relativePath: { eq: "laptop.jpg"}) {
         childImageSharp {
-          fluid(maxWidth: 150, maxHeight: 150) {
+          fluid(maxWidth: 580, maxHeight: 350) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -50,8 +50,10 @@ const BeRelentless = () => {
           <h2 className={beRelentlessStyles.sectionTitle}>How It Was Built</h2>
           <div className={beRelentlessStyles.bottomLine}></div>
           <div className={beRelentlessStyles.container}>
-            <div className={beRelentlessStyles.projectImage}>
-              <Img fluid={data.laptop.childImageSharp.fluid} />
+            <div className={beRelentlessStyles.project}>
+              <div className={beRelentlessStyles.projectImage}>
+                <Img fluid={data.laptop.childImageSharp.fluid} />
+              </div>
             </div>
             <div className={`${beRelentlessStyles.projectTechnologies} ${beRelentlessStyles.bgLight}`}>
               <ul>

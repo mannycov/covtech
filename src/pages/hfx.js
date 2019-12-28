@@ -1,12 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout'
 import Head from '../components/head'
-import laptop from '../images/laptop.jpg'
-import hfx from '../images/hfx.png'
 import hfxStyles from '../styles/hfx.module.scss'
 
 const HFX = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    hfx: file (relativePath: { eq: "hfx.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 580, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    laptop: file (relativePath: { eq: "laptop.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 580, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+  `)
   return (
     <Layout>
       <Head title="HFX" />
@@ -20,7 +38,7 @@ const HFX = () => {
             </div>
             <div className={hfxStyles.project}>
               <div className={hfxStyles.projectImage}>
-                <img src={hfx} alt="HFX" />
+                <Img fluid={data.hfx.childImageSharp.fluid} />
               </div>
               <div className={hfxStyles.projectLink}>
                 <a className={hfxStyles.btnLight} href="http://www.hfxbyricardo.com" target="_blank" rel="noopener noreferrer">Visit</a>
@@ -32,8 +50,10 @@ const HFX = () => {
           <h2 className={hfxStyles.sectionTitle}>How It Was Built</h2>
           <div className={hfxStyles.bottomLine}></div>
           <div className={hfxStyles.container}>
-            <div className={hfxStyles.projectImage}>
-              <img src={laptop} alt="laptop"/>
+            <div className={hfxStyles.project}>
+              <div className={hfxStyles.projectImage}>
+                <Img fluid={data.laptop.childImageSharp.fluid} />
+              </div>
             </div>
             <div className={`${hfxStyles.projectTechnologies} ${hfxStyles.bgLight}`}>
               <ul>
